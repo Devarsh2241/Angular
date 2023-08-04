@@ -1,0 +1,24 @@
+<h1>Color Effect</h1>
+
+<div [ngSwitch]="color" class="combo">
+<h1 *ngSwitchCase="'red'"style="background-color: red;">Red</h1>
+<h1 *ngSwitchCase="'green'"style="background-color: green;">Green</h1>
+<h1 *ngSwitchCase="'blue'"style="background-color: blue;">Blue</h1>
+<h1 *ngSwitchCase="'orange'"style="background-color: orange;">Orange</h1>
+<h1 *ngSwitchCase="'gray'"style="background-color: gray;">Gray</h1>
+<h1 *ngSwitchDefault style="background-color:black;color:white;">Unknown Color</h1>
+</div>
+
+
+<div class="search">
+<input #box type="text" class="text">
+<button (click)="colour(box.value)" class="btn">Click</button>
+</div>
+
+<div class="button">
+<button (mouseover)="colour('red')" id="red" class="btn">Red</button>
+<button (mouseover)="colour('green')" id="green" class="btn">Green</button>
+<button (mouseover)="colour('blue')" id="blue" class="btn">Blue</button>
+<button (mouseover)="colour('orange')" id="orange" class="btn">Orange</button>
+<button (mouseover)="colour('gray')" id="gray" class="btn">Gray</button>
+</div>

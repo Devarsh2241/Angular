@@ -1,0 +1,43 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.combo {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    height: auto;
+    width: auto;
+}
+
+.search {
+    margin: 50px;
+    padding: 30px;
+    background-color: burlywood;
+}
+
+.search .text {
+    color: darkcyan;
+    background-color: lightgreen;
+    height: 40px;
+    width: 250px;
+    font-size: 30px;
+    margin: auto;
+    padding: auto;
+    margin-right: 30px;
+}
+.search .btn{
+    background-color: chocolate;
+    height: 30px;
+    width: 70px;
+
+}
+.btn{
+    background-color: chocolate;
+    height: 30px;
+    width: 70px;
+    margin-right: 10px;
+}
