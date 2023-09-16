@@ -1,0 +1,23 @@
+.emp-data{
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+    width: 500px;
+}
+.my-data{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+form{
+    background-color: rgb(232, 226, 218);
+    padding: 20px;
+    width: 40%;
+    margin: 10px;
+}
+input[type="text"]{
+    padding: 10px;
+    margin: 10px;
+}
