@@ -1,0 +1,23 @@
+<!-- <input type="text" #box>
+<button (click)="getValue(box.value)">Value</button>
+
+<h1>{{currentvalue}}</h1> -->
+
+
+<form #box="ngForm" (ngSubmit)="getData(box.value)" >
+    <label for="m1">Mark 1</label><br>
+    <input type="number" name="m1" [(ngModel)]="m1"><br>
+
+    <label for="m2">Mark 2</label><br>
+    <input type="number" name="m2" [(ngModel)]="m2"><br>
+    
+    <label for="m3">Mark 3</label><br>
+    <input type="number" name="m3" [(ngModel)]="m3"><br>
+    
+    <label for="m4">Mark 4</label><br>
+    <input type="number" name="m4" [(ngModel)]="m4"><br>
+
+    <br>
+    <button>Calculate</button>
+</form>
+<h1>{{total}}</h1>
