@@ -1,0 +1,27 @@
+<form>
+    <label>ID</label><br>
+    <label>{{result.id}}</label><br>
+    <br>
+    <label for="paperCode">Paper Code</label><br>
+    <label>{{result.paperCode}}</label><br>
+    <br>
+    <label for="paperTitle">Paper Title</label><br>
+    <label>{{result.paperTitle}}</label><br>
+    <br>
+    <label for="marks">Marks</label><br>
+    <input type="text" name="marks" #marks [(ngModel)]="result.marks"><br>
+    <br>
+
+    <label [style.color]="result.pass=='Pass'?'green':'red'">{{result.pass}}</label>
+    <br>
+    <br>
+
+    <button (click)="getdata()">Submit</button>
+    
+    
+    <br>
+
+    
+
+   
+</form>
