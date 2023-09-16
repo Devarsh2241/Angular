@@ -1,0 +1,17 @@
+h2{
+    background-color: rgb(39, 224, 116);
+    height: auto;
+    width: 250px;
+    text-align: center;
+}
+h4{
+    background-color: bisque;
+    color: #000;
+    height: auto;
+    width: 250px;
+    text-align: center;
+}
+h3{
+    padding: auto;
+    margin: 5px;
+}

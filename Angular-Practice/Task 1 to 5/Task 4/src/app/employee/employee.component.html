@@ -1,0 +1,26 @@
+<h2>{{emp.employee_number}}</h2>
+<h2>{{emp.name}}</h2>
+<h2>{{emp.designation}}</h2>
+<h2>{{emp.dno}}</h2>
+<h2>{{emp.salary}}</h2>
+<h2>{{emp.hasLeft}}</h2>
+
+<hr>
+
+<form>
+    <form #form="ngForm">
+        <label for="name">Employee Name: </label><br>
+        <input type="text" name="name" [(ngModel)] = "emp.name" ><br>
+        <label for="designation">Employee Designation: </label><br>
+        <input type="text" name="designation" [(ngModel)] = "emp.designation" ><br>
+        <label for="dept">Employee Department: </label><br>
+        <input type="text" name="dept"  [(ngModel)] = "emp.dno"><br>
+        <label for="salary">Employee salary: </label><br>
+        <input type="text" name="salary"  [(ngModel)] = "emp.salary"><br>
+        <label for="left">Employee Left?: </label><br>
+        <input type="text" name="left"  [(ngModel)] = "emp.hasLeft"><br>   
+    
+
+
+</form>
+</form>
