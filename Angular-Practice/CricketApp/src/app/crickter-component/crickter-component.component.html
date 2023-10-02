@@ -1,0 +1,27 @@
+<h2 [ngStyle]="{'background-color':bgc}" style="color: white;">{{playerName}}</h2>
+
+<form #form="ngForm">
+    Player Name : <input type="text" name="playerName" [(ngModel)]="playerName"><br><br>
+
+    Player Type : <input type="text" name="playerType" [(ngModel)]="playerType" placeholder="batter / bowler"
+        (input)="change()"><br><br>
+
+    Innings : <input type="text" name="Innings" [(ngModel)]="Innings"><br><br>
+
+   
+
+    <ng-template [ngIf]="playerType=='batter'">
+        runsScored : <input type="text" name="runsScored" [(ngModel)]="runsScored"><br><br>
+
+        centuries : <input type="text" name="centuries" [(ngModel)]="centuries"><br><br>
+    </ng-template>
+    <ng-template [ngIf]="playerType=='bolwer'">
+        wickets : <input type="text" name="wickets" [(ngModel)]="wickets"><br><br>
+
+        economy : <input type="text" name="economy" [(ngModel)]="economy"><br><br>
+    </ng-template>
+
+
+    <button (click)="submit()">Submt</button>
+
+</form>
