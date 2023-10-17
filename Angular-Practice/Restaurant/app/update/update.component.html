@@ -1,0 +1,22 @@
+<h1>Update Restaurant</h1>
+
+
+<div *ngIf="alert" class="alert alert-success alert dismissible fade show" role="alert">
+    <strong>Success !!</strong> Your data has been Entered
+    <button (click)="alertclean()" >Click</button>
+    </div>
+    <form  [formGroup]="editresto">
+    <div class="container justify-content mt-5">
+    <div class="mb-3 p-2" >
+        <label for="formGroupExampleInput" class="form-label">Restaurant Name</label>
+        <input type="text" class="form-control" formControlName="name" placeholder="Restaurant Name">
+    </div>
+    <div class="mb-3 p-2">
+        <label for="formGroupExampleInput2" class="form-label">Restaurant E-mail</label>
+        <input type="text" class="form-control"  formControlName="email" placeholder="Restaurant E-mail">
+    </div>
+    <div class="p-2">
+        <button type="submit" class="btn btn-primary" (click)="updateresto()">UPDATE</button>
+    </div>
+    </div>
+    </form>
